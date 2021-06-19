@@ -1,30 +1,40 @@
-import '../styles/todo-list.css'
-import './list-item'
+import '../styles/todo-list.css';
+import ListItem from './list-item';
+
+
+const ListItems = [
+    {
+    id: 1,
+    title: 'item 1',
+    description: 'A description of the item'
+},
+
+{
+    id: 2,
+    title: 'item 2',
+    description: 'A description of the item'
+},
+
+{
+    id: 3,
+    title: 'item 3',
+    description: 'A description of the item'
+},
+
+{
+    id: 4,
+    title: 'item 4',
+    description: 'A description of the item'
+}
+]
 
 function TodoList() {
-    return <ul>
-        <li>
-            <h3 class='title'>Grocery shopping</h3>
-            <p>Pick up some salad ingredients from the market.</p>
-            <button class ='btn'>Edit</button>
-            <button class ='btn remove'>Remove</button>
-        </li>
-
-        <li>
-            <h3 class='title'>Laundry</h3>
-            <p class='description'>Collect my clothes from the Laundromat.</p>
-            <button class ='btn'>Edit</button>
-            <button class ='btn remove'>Remove</button>
-        </li>
-
-        <li>
-            <h3 class='title'>Car wash</h3>
-            <p class='description'>Take my car to be cleaned at the car wash.</p>
-           
-            <button class ='btn'>Edit</button>
-            <button class ='btn remove'>Remove</button>
-        </li>
-    </ul>;
+    return (
+    <ul>{
+        ListItems.map(item => (<ListItem/>))
+        }
+    </ul>
+    );
 }
 
 

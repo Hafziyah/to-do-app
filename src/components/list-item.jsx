@@ -1,6 +1,5 @@
-
 function ListItem() {
-    return(
+    return( 
         <li>
             <h3 class='title'>Laundry</h3>
             <p class='description'>Collect my clothes from the Laundromat.</p>
@@ -11,3 +10,4 @@ function ListItem() {
     );
 }
 
+export default ListItem;
