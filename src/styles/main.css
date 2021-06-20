@@ -18,9 +18,9 @@ button {
 
 .btn {
   padding: 0.5rem 0.75rem;
-  border: 2px solid green;
+  border: 2px solid black;
   border-radius: 10px;
-  background-color: blueviolet;
+  background-color: blue;
   color: white;
   cursor: pointer;
 }

@@ -1,13 +1,17 @@
-function ListItem() {
+function ListItem({item}) {
     return( 
         <li>
-            <h3 class='title'>Laundry</h3>
-            <p class='description'>Collect my clothes from the Laundromat.</p>
-            <button class ='btn'>Edit</button>
-            <button class ='btn remove'>Remove</button>
+            <h3 className='title'>{item.title}</h3>
+                <p className='description'>{item.description}</p>
+                <button className ='btn'>Edit</button>
+                <button className ='btn remove'>Remove</button>
         </li>
 
     );
 }
+
+
+
+
 
 export default ListItem;
